@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>15-Puzzle</h1>
+    <div class="game-info">
+        <div class="info-item">
+            <span>Time:</span>
+            <span id="timer">00:00</span>
+        </div>
+        <div class="info-item">
+            <span>Moves:</span>
+            <span id="move-counter">0</span>
+        </div>
+    </div>
+    <div id="game-board" class="game-board"></div>
+    <button id="reset-button">New Game</button>
+
+    <div class="stats-container">
+        <h3>My Stats</h3>
+        <div class="stats-item">
+            <span>Games Played:</span>
+            <span id="stats-games-played">0</span>
+        </div>
+        <div class="stats-item">
+            <span>Best Time:</span>
+            <span id="stats-best-time">--:--</span>
+        </div>
+    </div>
+
+    <div id="win-screen" class="win-screen-overlay">
+        <div class="win-screen-content">
+            <h2>You Win!</h2>
+            <p>Your time: <span id="final-time"></span></p>
+            <p>Total moves: <span id="final-moves"></span></p>
+            <button id="play-again-button">Play Again</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
